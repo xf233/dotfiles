@@ -41,7 +41,6 @@ cnoremap jk <Esc>
 " augroup setting -----------------{{{
 augroup mygroup
 	autocmd!
-	"autocmd BufRead * :echom '>^.^<' 
     autocmd BufWritePost .vimrc source $MYVIMRC 
 	autocmd BufEnter *.gz	%!gunzip
 	"autocmd BufNewFile *.txt :write "使用:e创建文件时立即写入磁盘
