@@ -6,7 +6,7 @@
 如何使用这个文件
 
 ```shell
-cd ~
-git clone https://github.com/xfzone/gitfiles.git 
-ln -s gitfiles/vimrc .vimrc
+cd ~/workspace
+git clone https://github.com/xf233/dotfiles.git 
+ln -s dotfiles/vimrc .vimrc
 ```
