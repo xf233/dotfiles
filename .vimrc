@@ -9,9 +9,10 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 Plugin 'kien/ctrlp.vim'
 Plugin 'hotoo/pangu.vim'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()            " required
 filetype plugin indent on    " required
  
@@ -21,7 +22,6 @@ filetype plugin indent on    " required
 set timeout timeoutlen=300
 let mapleader=','
 let maplocalleader=','
-" inoremap 
 " doller sign 
 inoremap jd $
 " equal sign 等号
@@ -57,18 +57,6 @@ augroup _innormap
 	autocmd FileType php inoremap <buffer> jjt  try<space>{<CR>}catch()<esc>mqa{<CR>}<esc>`q
 augroup end
 
-" todo J K 改为原H 原L 该窗口顶部和底部
-nnoremap J gT
-nnoremap K gt
-" 默认J是合并两行，重写一个合并两行的代码
-nnoremap <leader>j mq$a<Del><Esc>`q
-" 行首行尾
-nnoremap H ^
-nnoremap L $
-" todo 重写原H 原L 到当前窗口的顶部和底部  T B 或者 <leader>t <leader>b
-"nnoremap <leader>m gt 
-"nnoremap <leader>n gT
-
 
 noremap ; :
 "nnoremap <leader>ev :split $MYVIMRC<cr>
@@ -87,10 +75,6 @@ noremap <leader>l ^v$
 
 
 cnoremap jk <Esc>
-cnoremap jn !
-
-vnoremap H ^
-vnoremap L $
 
 
 " augroup setting
