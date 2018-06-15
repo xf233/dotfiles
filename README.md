@@ -8,8 +8,6 @@ cd ~/.vim
 
 git clone https://github.com/xfee/vimrc.git
 
-cd vimrc
-
 ln -s ~/.vim/vimrc/init.vim ~/.vimrc
 ```
 
