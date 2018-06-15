@@ -4,11 +4,13 @@
 ### 如何使用
 
 ```shell
+cd ~/.vim
+
 git clone https://github.com/xfee/vimrc.git
 
 cd vimrc
 
-ln -s .vimrc ~/.vimrc
+ln -s ~/.vim/vimrc/init.vim ~/.vimrc
 ```
 
 
