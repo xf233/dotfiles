@@ -28,6 +28,10 @@ inoremap <C-k> <up>
 "inoremap ( ()<left>
 "inoremap [ []<left>
 "inoremap { {}<left>
+
+map f <Plug>(easymotion-bd-f)
+nmap f <Plug>(easymotion-overwin-f)
+
 augroup _innormap
 	autocmd!
 	autocmd FileType php inoremap jjp $_POST['']<left><left>
@@ -51,7 +55,7 @@ nnoremap <leader>w <C-w-w>
 " augroup setting
 augroup mygroup
 	autocmd!
-    autocmd BufWritePost vimrc source $MYVIMRC 
+"   autocmd BufWritePost vimrc source $MYVIMRC 
 	autocmd BufEnter *.gz	%!gunzip
 	"autocmd BufNewFile *.txt :write "使用:e创建文件时立即写入磁盘
 	"autocmd BufWritePre,BufRead *.html :normal gg=G

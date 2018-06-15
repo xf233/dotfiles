@@ -35,10 +35,3 @@ set incsearch
 set nohlsearch                    "高亮搜索项"
 set whichwrap+=<,>,h,l
 set autoread
-
-augroup filetype_vim
-	autocmd!
-	"autocmd FileType vim setlocal foldmethod=marker
-augroup END
-
-set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon17
